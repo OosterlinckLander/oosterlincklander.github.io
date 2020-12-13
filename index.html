@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Weather App</title>
+		<meta name="description" content="This is my HTML5 boilerplate." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="./script/script.js"></script>
+		<script src="./script/dataHandler.js"></script>
+
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/screen.css" />
+	</head>
+	<body>
+		<div class="c-app" id="js-app">
+			<div class="c-app__selector u-grid-column-2">
+				<div class="c-info c-info__button-london">
+					<button id="js-lo" class="c-link-cta is-selected" data-value="44418">London</button>
+				</div>
+			</div>
+			<div class="c-app__selector u-grid-column-2">
+				<div class="c-info c-info__button-brussels">
+					<button id="js-br" class="c-link-cta" data-value="968019">Brussels</button>
+				</div>
+			</div>
+			<div class="c-app__selector u-grid-column-2">
+				<div class="c-info c-info__button-newyork">
+					<button id="js-ny" class="c-link-cta" data-value="2459115">New York</button>
+				</div>
+			</div>
+			<div class="c-app__selector u-grid-column-2">
+				<div class="c-info c-info__button-lasvegas">
+					<button id="js-la" class="c-link-cta" data-value="2442047">LA</button>
+				</div>
+			</div>
+			<div class="c-app__location u-grid-column-8">
+				<span id="js-naam" class="c-app__location-label">London</span>
+				<hr class="u-border-line" />
+			</div>
+			<div class="c-app__latlong u-grid-column-8">
+				<p id="js-latlong" class="c-app_latlong">51.506321, -0.12714</p>
+			</div>
+			<div class="c-app__icon u-grid-column-8">
+				<img id="js-svg" class="test" alt="" />
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3>Now</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3>Min</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3>Max</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3 id="js-wind-d">NE</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3 id="js-now" class="white">16°C</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3 id="js-min" class="white">12°C</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3 id="js-max" class="white">36°C</h3>
+			</div>
+			<div class="c-app__temp u-grid-column-2">
+				<h3 id="js-wind" class="white">3,6</h3>
+			</div>
+			<div class="c-app__tomorrow js-voor u-grid-column-8">
+				<div class="c-app__tomorrow-label u-grid-column-1">
+					<span class="c-app__daylabel">Thu 16 Oct</span>
+				</div>
+				<div class="c-app__tomorrow-temp1 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-temp2 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-voor u-grid-column-1">
+					<img class="c-img" id="js-abbr1">
+				</div>
+				<div class="c-app__tomorrow-label u-grid-column-1">
+					<span class="c-app__daylabel">Tomorrow</span>
+				</div>
+				<div class="c-app__tomorrow-temp1 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-temp2 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-voor u-grid-column-1">
+					<img class="c-img" id="js-abbr2">
+				</div>
+				<div class="c-app__tomorrow-label u-grid-column-1">
+					<span class="c-app__daylabel">Tomorrow</span>
+				</div>
+				<div class="c-app__tomorrow-temp1 u-grid-column-1">
+					<p class="c-label-v">6°C</p>
+				</div>
+				<div class="c-app__tomorrow-temp2 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-voor u-grid-column-1">
+					<img class="c-img" id="js-abbr3">
+				</div>
+				<div class="c-app__tomorrow-label u-grid-column-1">
+					<span class="c-app__daylabel">Tomorrow</span>
+				</div>
+				<div class="c-app__tomorrow-temp1 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-temp2 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-voor u-grid-column-1">
+					<img class="c-img" id="js-abbr4">
+				</div>
+				<div class="c-app__tomorrow-label u-grid-column-1">
+					<span class="c-app__daylabel">Tomorrow</span>
+				</div>
+				<div class="c-app__tomorrow-temp1 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-temp2 u-grid-column-1">
+					<p class="c-label-v">16°C</p>
+				</div>
+				<div class="c-app__tomorrow-voor u-grid-column-1">
+					<img class="c-img" id="js-abbr5">
+				</div>
+			</div>
+		</div>
+		<div id="loader-wrapper" class="loader-wrapper">
+			<span class="loader"><span class="loader-inner"></span></span>
+		</div>
+</html>
