@@ -187,13 +187,13 @@ const VerwerkWeather = function (data){
 
 const getWeather = function (id){
     handleData(
-        `https://www.metaweather.com/api/location/${id}/`,
+        `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${id}/`,
         VerwerkWeather
     )
 }
 
 const Loader = function() {
-    setTimeout(() => { document.getElementById('loader-wrapper').style.display = "none"; }, 1500)
+    setTimeout(() => { document.getElementById('loader-wrapper').style.display = "none"; }, 2000)
 }
 
 const init = function(){
