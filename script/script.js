@@ -193,7 +193,7 @@ const getWeather = function (id){
 }
 
 const Loader = function() {
-    setTimeout(() => { document.getElementById('loader-wrapper').style.display = "none"; }, 2000)
+    setTimeout(() => { document.getElementById('loader-wrapper').style.display = "none"; }, 2500)
 }
 
 const init = function(){
