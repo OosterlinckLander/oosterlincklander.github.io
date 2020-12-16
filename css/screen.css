@@ -426,12 +426,14 @@ select {
 		display: grid;
 		max-width: 95%;
 		margin: auto;
-		grid-template-columns: 500px 1fr;
+		grid-template-columns: 550px 1fr;
 	}
 
 	.c-landing__img {
 		margin-top: calc( var(--global-baseline) * 6);
-		width: 65%;
+		width: 50%;
+		max-height: 470px;
+		margin-top: -4px;
 	}
 
 	.c-app__tomorrow-temp1 {
@@ -481,8 +483,10 @@ select {
 	}
 
 	.c-landing__img {
+		margin-top: -4px;
 		width: 240px;
 		margin-left: 24px;
+		max-height: 470px;
 	}
 
 	.c-landing {
@@ -503,7 +507,9 @@ select {
 	}
 
 	.c-landing__img {
+		margin-top: -4px;
 		width: 240px;
+		max-height: 470px;
 		margin-left: 24px;
 	}
 
