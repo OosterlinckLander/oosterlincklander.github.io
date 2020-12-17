@@ -300,6 +300,7 @@ select {
 		font-size: calc( var(--root-font-size) * 4.5);
 		line-height: calc(var(--root-font-size) * 4.5);
 		text-align: center;
+		margin: 0 0 0;
 	}
 
 	.c-app__daylabel {
