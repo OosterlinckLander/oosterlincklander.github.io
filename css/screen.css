@@ -380,7 +380,7 @@ select {
 	}
 
 	.c-app__daylabel {
-		font-size: calc( var(--root-font-size) * 9);
+		font-size: calc( var(--root-font-size) * 6);
 		line-height: calc(var(--root-font-size) * 6.5);
 		font-weight: var(--bold);
 	}
